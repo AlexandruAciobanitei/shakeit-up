@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#AFCE9B"/>
+    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300;400;500&family=Montserrat:wght@100;200;300;400;600;700;800&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container-main">
+        <div class="text-top">
+
+            <h2>Great to see you got so far!</h2>
+            <h4>Hopefully by now you managed to lose
+                some stress and became more grounded.
+                Feel free to share your gratitude list and
+                some thoughts on the experience. It is
+                completely anonymous!</h4>
+        </div>
+
+        <div class="add-testimonial">
+
+            <img src="/images/add-btn.png" alt="">
+            <h4>SHARE YOUR <BR></BR> EXPERIENCE</h4>
+
+        </div>
+
+        <div class="text-bottom">
+            <h4>Shake your phone to <br>
+                see a random testionial</h4>
+        </div>
+    </div>
+    <script src="phoneShake.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            
+            navigator.serviceWorker.register('/service-worker.js')
+        }
+    </script>
+    
+    
+</body>
+</html>
