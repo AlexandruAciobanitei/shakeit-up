@@ -163,3 +163,9 @@ ul li {
 
 }
 
+
+.text-bottom button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
