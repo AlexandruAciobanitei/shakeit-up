@@ -1,7 +1,7 @@
-var Shake = require('./shakejs/shake');
+import shake from "./shakejs/shake";
 
 
-var myShakeEvent = new Shake({
+var myShakeEvent = new shake({
     threshold: 15, // optional shake strength threshold
     timeout: 1000 // optional, determines the frequency of event generation
 });
