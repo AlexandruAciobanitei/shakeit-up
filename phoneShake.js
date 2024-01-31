@@ -1,4 +1,4 @@
-import shake from "./shakejs/shake";
+//
 
 
 var myShakeEvent = new shake({
