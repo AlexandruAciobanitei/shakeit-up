@@ -50,28 +50,3 @@ const listItemIds = ["grateful1", "grateful2", "grateful3", "elaborate", "feedba
 
 
 
-// Fetch data from firebase
-
-function addItemsToList() {
-    
-    const listElement = document.getElementById("list")
-
-    getFirestore.collection("forms").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            const data = doc.data()
-
-            listItemIds.forEach((id, index) => {
-                const listItem = document.getElementById(id)
-                if (listItem) {
-                    listItem.textContent = data[id]
-                }
-
-            })
-        }).catch((error) => {
-            console.error("Error getting documents", error);
-        })
-    })
-    
-}
-
-document.addEventListener("DOMContentLoaded", addItemsToList);
